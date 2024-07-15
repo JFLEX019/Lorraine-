@@ -23,9 +23,9 @@ export class Client extends (EventEmitter as new () => TypedEventEmitter<Events>
         super()
         Config()
         this.config = {
-            name: process.env.BOT_NAME || 'Bot',
-            session: process.env.SESSION || 'SESSION',
-            prefix: process.env.PREFIX || ':',
+            name: process.env.BOT_NAME || 'Lorraine',
+            session: process.env.SESSION || 'JFLEX',
+            prefix: process.env.PREFIX || '/',
             mods: (process.env.MODS || '').split(', ').map((user) => `${user}@s.whatsapp.net`),
             PORT: Number(process.env.PORT || 3000)
         }
@@ -46,7 +46,7 @@ export class Client extends (EventEmitter as new () => TypedEventEmitter<Events>
             printQRInTerminal: true,
             auth: state,
             logger: P({ level: 'fatal' }),
-            browser: ['WhatsApp-bot', 'fatal', '4.0.0'],
+            browser: ['LORRAINE-MD🤤❤️', 'fatal', '4.0.0'],
             getMessage: async (key) => {
                 return {
                     conversation: ''
